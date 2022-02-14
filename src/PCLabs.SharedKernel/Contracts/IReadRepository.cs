@@ -9,7 +9,7 @@ namespace PCLabs.SharedKernel.Contracts
         Task<T?> SingleOrDefaultAsync(ISpecification<T> specification, CancellationToken cancellationToken = default);
         Task<TResult?> SingleOrDefaultAsync<TResult>(ISpecification<T, TResult> specification, CancellationToken cancellationToken = default);
 
-        Task<TResult?> ProjectToSingleOrDefaultAsync<TResult>(ISpecification<T> specification, CancellationToken cancellationToken);
+        Task<TResult?> ProjectToFirstOrDefaultAsync<TResult>(ISpecification<T> specification, CancellationToken cancellationToken);
         Task<List<TResult>> ProjectToListAsync<TResult>(ISpecification<T> specification, CancellationToken cancellationToken);
         Task<List<TResult>> ProjectToListAsync<TResult>(CancellationToken cancellationToken);
     }

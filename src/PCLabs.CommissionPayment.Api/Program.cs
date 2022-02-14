@@ -21,7 +21,6 @@ builder.Services.AddScoped<AppDbInitializer>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
 builder.Services.AddScoped<IBlogRepository, BlogRepositoryEFCore>();
-//builder.Services.AddScoped<IBlogRepository, BlogRepositoryDapper>();
 
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddFluentValidation(options =>

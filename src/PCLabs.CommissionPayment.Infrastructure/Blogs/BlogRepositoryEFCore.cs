@@ -5,6 +5,7 @@ using PCLabs.CommissionPayment.Domain.Contracts;
 
 namespace PCLabs.CommissionPayment.Infrastructure.Blogs
 {
+    // Example repository to be used without specifications.
     public class BlogRepositoryEFCore : IBlogRepository
     {
         private readonly AppDbContext _dbContext;

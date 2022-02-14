@@ -40,7 +40,7 @@ namespace PCLabs.CommissionPayment.Infrastructure
             return await ApplySpecification(specification).SingleOrDefaultAsync(cancellationToken);
         }
 
-        public async Task<TResult?> ProjectToSingleOrDefaultAsync<TResult>(ISpecification<T> specification, CancellationToken cancellationToken)
+        public async Task<TResult?> ProjectToFirstOrDefaultAsync<TResult>(ISpecification<T> specification, CancellationToken cancellationToken)
         {
             return await ApplySpecification(specification)
                 .ProjectTo<TResult>(_configurationProvider)
