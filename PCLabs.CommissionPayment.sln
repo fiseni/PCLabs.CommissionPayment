@@ -19,6 +19,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PCLabs.SharedKernel", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PCLabs.Extensions", "src\PCLabs.Extensions\PCLabs.Extensions.csproj", "{7287CC77-BDA0-4CBF-995B-38960CADB73C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCLabs.CommissionPayment.UnitTests", "tests\PCLabs.CommissionPayment.UnitTests\PCLabs.CommissionPayment.UnitTests.csproj", "{DCB79BD0-0EEB-4E49-9CA7-A9CE56858B10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCLabs.CommissionPayment.IntegrationTests", "tests\PCLabs.CommissionPayment.IntegrationTests\PCLabs.CommissionPayment.IntegrationTests.csproj", "{F4291405-FC3B-4FF2-926C-8CA2A691CAE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCLabs.CommissionPayment.FunctionalTests", "tests\PCLabs.CommissionPayment.FunctionalTests\PCLabs.CommissionPayment.FunctionalTests.csproj", "{09D03745-700B-4CDB-B8D1-D9E9A74FA4CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +51,18 @@ Global
 		{7287CC77-BDA0-4CBF-995B-38960CADB73C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7287CC77-BDA0-4CBF-995B-38960CADB73C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7287CC77-BDA0-4CBF-995B-38960CADB73C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB79BD0-0EEB-4E49-9CA7-A9CE56858B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB79BD0-0EEB-4E49-9CA7-A9CE56858B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB79BD0-0EEB-4E49-9CA7-A9CE56858B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB79BD0-0EEB-4E49-9CA7-A9CE56858B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4291405-FC3B-4FF2-926C-8CA2A691CAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4291405-FC3B-4FF2-926C-8CA2A691CAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4291405-FC3B-4FF2-926C-8CA2A691CAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4291405-FC3B-4FF2-926C-8CA2A691CAE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D03745-700B-4CDB-B8D1-D9E9A74FA4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D03745-700B-4CDB-B8D1-D9E9A74FA4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D03745-700B-4CDB-B8D1-D9E9A74FA4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D03745-700B-4CDB-B8D1-D9E9A74FA4CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +73,9 @@ Global
 		{AD596FD9-D102-4FF2-BAD6-2E01BCBEE33C} = {1B9BAEF6-AA24-4636-BC66-093E1EC023D7}
 		{92AECD94-DBC1-4156-A37A-043275BB9BE8} = {3820303A-0BCE-43CE-AE17-EEC598CC801C}
 		{7287CC77-BDA0-4CBF-995B-38960CADB73C} = {3820303A-0BCE-43CE-AE17-EEC598CC801C}
+		{DCB79BD0-0EEB-4E49-9CA7-A9CE56858B10} = {2FEC6891-9CF0-4EE2-9A96-881AA2CF8EF1}
+		{F4291405-FC3B-4FF2-926C-8CA2A691CAE3} = {2FEC6891-9CF0-4EE2-9A96-881AA2CF8EF1}
+		{09D03745-700B-4CDB-B8D1-D9E9A74FA4CE} = {2FEC6891-9CF0-4EE2-9A96-881AA2CF8EF1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8513321B-4BC9-4DDE-BD06-E5816E060BC1}
