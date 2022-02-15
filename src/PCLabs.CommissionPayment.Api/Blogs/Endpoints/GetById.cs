@@ -42,15 +42,15 @@ public class GetById : EndpointBaseAsync
     }
 
     // Alternatively we can project directly to the results, without utilizing the domain model.
-    //public async Task<ActionResult<BlogDto>> HandleAlternativeAsync(
-    //    Guid id,
-    //    CancellationToken cancellationToken = default)
-    //{
-    //    var spec = new BlogByIdSpec(id);
-    //    var response = await _readRepository.ProjectToFirstOrDefaultAsync<BlogDto>(spec, cancellationToken);
+    private async Task<ActionResult<BlogDto>> HandleAlternativeAsync(
+        Guid id,
+        CancellationToken cancellationToken = default)
+    {
+        var spec = new BlogByIdSpec(id);
+        var response = await _readRepository.ProjectToFirstOrDefaultAsync<BlogDto>(spec, cancellationToken);
 
-    //    if (response is null) return NotFound();
+        if (response is null) return NotFound();
 
-    //    return Ok(response);
-    //}
+        return Ok(response);
+    }
 }

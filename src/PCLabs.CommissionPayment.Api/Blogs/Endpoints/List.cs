@@ -39,12 +39,11 @@ public class List : EndpointBaseAsync
     }
 
     // Alternatively we can project directly to the results, without utilizing the domain model.
-    //public async Task<ActionResult<List<BlogDto>>> HandleAlternativeAsync(
-    //    CancellationToken cancellationToken = default)
-    //{
-    //    var spec = new BlogSpec();
-    //    var response = await _readRepository.ProjectToListAsync<BlogDto>(spec, cancellationToken);
+    private async Task<ActionResult<List<BlogDto>>> HandleAlternativeAsync(
+        CancellationToken cancellationToken = default)
+    {
+        var response = await _readRepository.ProjectToListAsync<BlogDto>(cancellationToken);
 
-    //    return Ok(response);
-    //}
+        return Ok(response);
+    }
 }
