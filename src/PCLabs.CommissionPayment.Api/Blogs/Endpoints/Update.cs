@@ -35,7 +35,7 @@ public class Update : EndpointBaseAsync
 
         if (existingBlog is null) return NotFound();
 
-        existingBlog.Update(request.Name);
+        existingBlog.Update(request.Name!);
 
         await _repository.UpdateAsync(existingBlog, cancellationToken);
 

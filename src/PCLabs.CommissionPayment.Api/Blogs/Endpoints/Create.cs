@@ -32,7 +32,7 @@ public class Create : EndpointBaseAsync
     {
         if (request is null) return BadRequest();
 
-        var newBlog = new Blog(request.Name);
+        var newBlog = new Blog(request.Name!);
 
         var blog = await _repository.AddAsync(newBlog, cancellationToken);
 

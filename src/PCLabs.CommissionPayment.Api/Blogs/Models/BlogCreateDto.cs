@@ -2,5 +2,5 @@
 
 public record BlogCreateDto
 {
-    public string Name { get; set; } = default(string)!;
+    public string? Name { get; set; }
 }
